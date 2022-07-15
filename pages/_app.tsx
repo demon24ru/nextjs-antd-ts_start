@@ -1,3 +1,4 @@
+import App from 'next/app'
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import PreLoaderScreen from "../components/PreLoader/PreLoaderScreen";
@@ -27,4 +28,4 @@ function MyApp({ Component, pageProps }) {
     );
 }
 
-export default MyApp
+export default MyApp;

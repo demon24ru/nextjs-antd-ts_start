@@ -1,19 +1,16 @@
 import Document, {Html, Head, Main, NextScript} from "next/document";
+import React from "react";
 
 
 export default class extends Document {
-    static async getInitialProps(ctx: any) {
-        const initialProps = await Document.getInitialProps(ctx);
-        return { ...initialProps };
-    }
-
     render() {
         return (
             <Html lang="ru">
             <Head>
-                <meta charSet="utf-8"/>
+                <meta charSet="utf-8" />
                 <meta name="theme-color" content="#ffffff"/>
                 <link rel="manifest" href="/manifest.json"/>
+                <link rel="icon" href="/favicon.ico" />
                 <style>{`
                       body {
                         margin: 0;
@@ -86,7 +83,7 @@ export default class extends Document {
                       }
                 `}</style>
             </Head>
-            <body style={{display: "block"}}>
+            <body>
                 <Main />
                 <NextScript />
             </body>
